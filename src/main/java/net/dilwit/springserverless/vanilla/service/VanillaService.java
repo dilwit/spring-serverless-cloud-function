@@ -22,11 +22,15 @@ public class VanillaService {
         logger.info("Hello, I can see what you send me -> " + vanilla.toString());
     }
 
-    public List<Vanilla> getVanilla() {
+    public List<Vanilla> getList() {
         List<Vanilla> samples = new ArrayList<>();
         samples.add(new Vanilla("bean 1"));
         samples.add(new Vanilla("bean 2"));
         samples.add(new Vanilla("bean 3"));
         return samples;
+    }
+
+    public Vanilla getOne() {
+        return new Vanilla("the one is here");
     }
 }
