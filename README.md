@@ -16,29 +16,6 @@ https://cloud.spring.io/spring-cloud-static/spring-cloud-function/2.1.1.RELEASE/
 ### Endpoints: Function as @Bean
 N/A
 
-### Test lambda
-##### Run locally - TBD
-##### AWS (Generic) Lambda via AWS Console
-* Go to created lambda function
-* Create test event and update FUNCTION_NAME env variable accordingly
-* Hit Test
-##### AWS Lambda as Rest Endpoint via API Gateway
-* Function 
-    - HTTP POST
-    - URL only: curl -X POST -H 'Content-Type: application/json' <aws-api-gateway-lambda-url> -d '{"name":"boo"}' -> 200 OK
-    - URL with url parameters - TBD
-    - To HTTP Codes () - TBD
-* Consumer 
-    - HTTP POST
-    - URL only: curl -X POST -H 'Content-Type: application/json' <aws-api-gateway-lambda-url>-d '{"name":"boo"}' -> 200 OK
-    - URL with url parameters - TBD
-    - To HTTP Codes () - TBD
-* Supplier 
-    - HTTP GET
-    - URL only: curl -X GET -H 'Content-Type: application/json' <aws-api-gateway-lambda-url> -> 502 (To investigate why)
-    - URL with url parameters - TBD
-    - URL with query parameters - TBD
-    - To HTTP Codes () - TBD
     
 ### Notable code level changes to make aws-lambda ready
 ##### AWS Lambda (Generic) - TBD
@@ -48,14 +25,20 @@ N/A
 
 ### JUnit testing - TBD
 
-### Deployment
+### Deploy
+##### Locally - TBD
+* Steps to deploy
+* Test
 ##### AWS Lambda (Generic)
 * Steps to deploy (via AWS Console)
     - Create new function
     - Set Handler as 'net.dilwit.springserverless.vanilla.controller.generic.GenericHandler' which provides 'Vanilla' request/response support
     - Add Environment Variable, key -> FUNCTION_NAME, value -> function name that needs execution (ie: gatewayImperativeConsumer) OR you can create three different lambda function for each function
     - Upload .jar file
-    - Refer Test section
+* Test
+    - Go to created lambda function
+    - Create test event and update FUNCTION_NAME env variable accordingly
+    - Hit Test
 ##### AWS Lambda as Rest Endpoint via API Gateway
 * Steps to deploy (via AWS Console)
     - Create new function
@@ -66,4 +49,21 @@ N/A
         - Select 'Create New'
         - Select 'Rest API'
         - Set security setting as 'Open'
-    - Refer Test section
+* Test
+    - Function 
+        - HTTP POST
+        - URL only: curl -X POST -H 'Content-Type: application/json' <aws-api-gateway-lambda-url> -d '{"name":"boo"}' -> 200 OK
+        - URL with url parameters - TBD
+        - To HTTP Codes () - TBD
+    - Consumer 
+        - HTTP POST
+        - URL only: curl -X POST -H 'Content-Type: application/json' <aws-api-gateway-lambda-url>-d '{"name":"boo"}' -> 200 OK
+        - URL with url parameters - TBD
+        - To HTTP Codes () - TBD
+    - Supplier 
+        - HTTP GET
+        - URL only: curl -X GET -H 'Content-Type: application/json' <aws-api-gateway-lambda-url> -> 502 (To investigate why)
+        - URL with url parameters - TBD
+        - URL with query parameters - TBD
+        - To HTTP Codes () - TBD
+        
