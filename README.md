@@ -46,9 +46,14 @@ Endpoints: Function as Class
     - URL with query parameters - TBD
     - Response with different HTTP Codes () - TBD
 
-### Unit/Integration testing - TBD
+### Unit/Integration testing
+* BeanController Testing covers examples of
+    - Integration test with Function catalog
+    - Integration test with RestTemplate
+    - Integration test with WebClient
+    
 
-### Deployment 
+### Deploy 
 * Local
     - Via Intellij
     - Standard .jar deployment with embedded tomcat/netty - TBD
