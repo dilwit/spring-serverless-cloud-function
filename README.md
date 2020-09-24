@@ -3,6 +3,7 @@ Focus on the master branch is to try out spring cloud functions as standalone we
 
 ### Good reference:
 https://cloud.spring.io/spring-cloud-static/spring-cloud-function/2.0.0.RELEASE/single/spring-cloud-function.html#_getting_started
+https://cloud.spring.io/spring-cloud-function/reference/html/index.html
 
 ### Function supported
 * Function - accepts input and returns output.
@@ -14,37 +15,37 @@ https://cloud.spring.io/spring-cloud-static/spring-cloud-function/2.0.0.RELEASE/
 * Function 
     - HTTP POST
     - URL only - curl -X POST -H 'Content-Type: application/json' http://localhost:8080/functionAsBean -d '{"name":"boo"}'
-    - URL with url parameters - TBD
-    - Response with different HTTP Codes () - TBD
+    - URL with url parameters - Not supported as per docs
+    - Response with different HTTP Codes () - Refer Function Test cases
 * Consumer 
     - HTTP POST
     - URL only - curl -X POST -H 'Content-Type: application/json' http://localhost:8080/consumerAsBean -d '{"name":"boo"}'
-    - URL with url parameters - TBD
-    - Response with different HTTP Codes () - TBD
+    - URL with url parameters - Not supported as per docs
+    - Response with different HTTP Codes () - Refer Function Test cases
 * Supplier 
     - HTTP GET
     - URL only - curl -X GET -H 'Content-Type: application/json' http://localhost:8080/supplierAsBean
-    - URL with url parameters - TBD
-    - URL with query parameters - TBD
-    - Response with different HTTP Codes () - TBD
+    - URL with url parameters - Not supported as per docs
+    - URL with query parameters - Not supported as per docs
+    - Response with different HTTP Codes () - Refer Function Test cases
 
 Endpoints: Function as Class
 * Function 
     - HTTP POST
     - URL only - curl -X POST -H 'Content-Type: application/json' http://localhost:8080/functionAsClass -d '{"name":"boo"}'
-    - URL with url parameters - TBD
-    - Response with different HTTP Codes () - TBD
+    - URL with url parameters - Not supported as per docs
+    - Response with different HTTP Codes () - Refer Function Test cases
 * Consumer 
     - HTTP POST
     - URL only - curl -X POST -H 'Content-Type: application/json' http://localhost:8080/consumerAsClass -d '{"name":"boo"}'
-    - URL with url parameters - TBD
-    - Response with different HTTP Codes () - TBD
+    - URL with url parameters - Not supported as per docs
+    - Response with different HTTP Codes () - Refer Function Test cases
 * Supplier 
     - HTTP GET
     - URL only: curl -X GET -H 'Content-Type: application/json' http://localhost:8080/supplierAsClass
-    - URL with url parameters - TBD
-    - URL with query parameters - TBD
-    - Response with different HTTP Codes () - TBD
+    - URL with url parameters - Not supported as per docs
+    - URL with query parameters - Not supported as per docs
+    - Response with different HTTP Codes () - Refer Function Test cases
 
 ### Unit/Integration testing
 * BeanController Testing covers examples of
