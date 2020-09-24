@@ -52,11 +52,15 @@ Endpoints: Function as Class
     - Integration test with Function catalog
     - Integration test with RestTemplate
     - Integration test with WebClient
+* Unit test - TBD (It won't change, same until testing with mocking)
     
 
 ### Deploy 
-* Local
-    - Via Intellij
-    - Standard .jar deployment with embedded tomcat/netty - TBD
-        - gradlew clean build - creates jar
-        -  
+* As Web Application (as usual)
+    - Local
+        - Via Intellij
+        - Standard .jar deployment with embedded tomcat/netty - TBD
+            - gradlew clean build - creates jar
+        -    java -jar <jar filename> 
+        
+* On Serverless platform -> Refer 'aws-lambda' branch
