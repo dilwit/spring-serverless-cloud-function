@@ -1,4 +1,4 @@
-package net.dilwit.springserverless.vanilla.controller.apigateway.imperative;
+package net.dilwit.springserverless.vanilla.controller.apigateway.generic.imperative;
 
 import com.google.gson.Gson;
 import net.dilwit.springserverless.vanilla.model.Vanilla;
@@ -12,15 +12,15 @@ import org.springframework.stereotype.Component;
 import java.util.function.Consumer;
 
 @Component
-public class GatewayImperativeConsumer implements Consumer<Message<Vanilla>> {
+public class GatewayGenericImperativeConsumer implements Consumer<Message<Vanilla>> {
 
-    private final Logger logger = LoggerFactory.getLogger(GatewayImperativeSupplier.class);
+    private final Logger logger = LoggerFactory.getLogger(GatewayGenericImperativeSupplier.class);
 
     private final VanillaService vanillaService;
     private final Gson gson;
 
     @Autowired
-    public GatewayImperativeConsumer(VanillaService vanillaService, Gson gson) {
+    public GatewayGenericImperativeConsumer(VanillaService vanillaService, Gson gson) {
         this.vanillaService = vanillaService;
         this.gson = gson;
     }
