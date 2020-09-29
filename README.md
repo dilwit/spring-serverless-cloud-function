@@ -62,19 +62,19 @@ Unit test - TBD (It won't change, same until testing with mocking)
     - Function 
         - HTTP POST
         - URL only: curl -X POST -H 'Content-Type: application/json' <aws-api-gateway-lambda-url> -d '{"name":"boo"}' -> 200 OK
-        - URL with url parameters - TBD
-        - To HTTP Codes () - TBD
+        - URL with url parameters - N/A
+        - To HTTP Codes () - N/A
     - Consumer 
         - HTTP POST
         - URL only: curl -X POST -H 'Content-Type: application/json' <aws-api-gateway-lambda-url>-d '{"name":"boo"}' -> 200 OK
-        - URL with url parameters - TBD
-        - To HTTP Codes () - TBD
+        - URL with url parameters - N/A
+        - To HTTP Codes () - N/A
     - Supplier 
         - HTTP GET
         - URL only: curl -X GET -H 'Content-Type: application/json' <aws-api-gateway-lambda-url> -> 502 (To investigate why)
-        - URL with url parameters - TBD
-        - URL with query parameters - TBD
-        - To HTTP Codes () - TBD
+        - URL with url parameters - N/A
+        - URL with query parameters - N/A
+        - To HTTP Codes () - N/A
         
 ##### AWS Lambda as Rest Endpoint via API Gateway (Specific)
 * Package net.dilwit.springserverless.vanilla.controller.apigateway.specific
@@ -91,16 +91,16 @@ Unit test - TBD (It won't change, same until testing with mocking)
     - Function 
         - HTTP POST
         - URL only: curl -X POST -H 'Content-Type: application/json' <aws-api-gateway-lambda-url> -d '{"name":"boo"}' -> 200 OK
-        - URL with url parameters - TBD
-        - To HTTP Codes () - TBD
+        - URL with url parameters - N/A
+        - To HTTP Codes () - See GatewaySpecificImperativeFunctionTest
     - Consumer 
         - HTTP POST
         - URL only: curl -X POST -H 'Content-Type: application/json' <aws-api-gateway-lambda-url>-d '{"name":"boo"}' -> 200 OK
         - URL with url parameters - TBD
-        - To HTTP Codes () - TBD
+        - To HTTP Codes () - See GatewaySpecificImperativeFunctionTest
     - Supplier 
         - HTTP GET
         - URL only: curl -X GET -H 'Content-Type: application/json' <aws-api-gateway-lambda-url> -> 502 (To investigate why)
-        - URL with url parameters - TBD
-        - URL with query parameters - TBD
-        - To HTTP Codes () - TBD
+        - URL with url parameters - N/A
+        - URL with query parameters - N/A
+        - To HTTP Codes () - See GatewaySpecificImperativeFunctionTest
