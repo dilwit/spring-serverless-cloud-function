@@ -31,7 +31,7 @@ N/A
 Unit test - TBD (It won't change, same until testing with mocking)
 
 ### Deploy
-##### Locally - TBD
+##### Locally - Refer branch 'aws-lambda-sam'
 * Steps to deploy -
 * Test
 
