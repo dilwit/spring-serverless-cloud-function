@@ -1,11 +1,9 @@
-### AWS Lambda support with Spring Cloud Function
-- AWS Lambda (Generic)
-- AWS Lambda as Rest Endpoint via API Gateway
+### AWS SAM
+TBD TBD TBD
+
 
 ### Good reference:
-https://cloud.spring.io/spring-cloud-static/spring-cloud-function/2.0.0.RELEASE/single/spring-cloud-function.html#_getting_started
-https://cloud.spring.io/spring-cloud-function/reference/html/spring-cloud-function.html#_introduction
-https://cloud.spring.io/spring-cloud-static/spring-cloud-function/2.1.1.RELEASE/aws.html
+- To kick-off sample application: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html
 
 ### Function supported
 * Function - accepts input and returns output.
